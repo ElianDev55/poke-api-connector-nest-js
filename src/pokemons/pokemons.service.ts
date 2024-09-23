@@ -27,7 +27,7 @@ export class PokemonsService {
   async getPokemonById(id: number): Promise<PokemonByIdResponse> {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
     const response = await fetch(url);
-
+    console.log('test of github actions');
     if (!response.ok) {
       throw new Error('Failed to fetch pokemon');
     }
